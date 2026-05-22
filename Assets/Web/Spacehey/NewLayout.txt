@@ -1,0 +1,11 @@
+:root {
+    --spaceheyLogo: "https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/SpaceheyIcon.png"
+}
+
+
+.table-section:nth-last-child(2) .details-table tr:nth-child(4){display:none;}
+.table-section:nth-last-child(2) .details-table tr:nth-child(5){display:none;}
+.profile-info{display: none !important;}
+.container{width: 100% !important;}
+
+.logo{content: url(var(--spaceheyLogo));width: 165px !important;height: 42px !important;}
