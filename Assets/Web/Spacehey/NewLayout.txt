@@ -1,11 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
-    --spaceheyLogo: "https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/SpaceheyIcon.png"
+    --spaceheyLogo: "https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/SpaceheyIcon.png";
+    --profileBanner: "https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/theexpie.webp"
 }
 
+body {
+    background-color: COLOR !important;
+    background-image: url('https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/Background.png') !important;
+    background-attachment: FIXED !important;
+    background-repeat: NO-REPEAT !important;
+    background-position: top left !important;
+    background-size: cover !important; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15pt;
+    font-weight: 450;
+}
+
+nav .top {
+    background-color: rgba(46,36,78,0);
+}
+
+.top {
+    margin-top: .5rem;
+    height: 60px;
+}
+
+nav .links {
+    background: transparent;
+    margin: 0rem;
+    margin-bottom: .5rem;
+    padding: .75rem;
+    padding-left: 1.25rem;
+    padding-top: .7rem;
+    letter-spacing: .1rem;
+    text-align: left;
+}
+
+nav {
+    display: block;
+    border: hidden;
+    border-radius: 30px 30px 15px 15px;
+    background-color: rgba(46,36,78,0.5);
+    backdrop-filter: blur(10px) brightness(0.5);
+}
 
 .table-section:nth-last-child(2) .details-table tr:nth-child(4){display:none;}
 .table-section:nth-last-child(2) .details-table tr:nth-child(5){display:none;}
 .profile-info{display: none !important;}
-.container{width: 100% !important;}
 
-.logo{content: url(var(--spaceheyLogo));width: 165px !important;height: 42px !important;}
+a {
+    color: rgb(183,115,243);
+    text-shadow: none;
+}
+
+main {
+    color: rgb(235,226,243);
+    background-color: rgba(46,36,78,0.5);
+    backdrop-filter: blur(10px) brightness(0.5);
+    width: auto;
+    border: hidden;
+    border-radius: 15px 15px 30px 30px;
+    padding: 10px;
+}
+
+main .right {
+    border: hidden;
+    background-color: rgba(255,0,0,0.3);
+    text-emphasis-color: red;
+}
+
+.online {
+    content: url("https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/theexpie.webp") !important;
+    color: color: rgb(235,226,243)
+}
+
+.heading {
+    background-color: transparent;
+}
+
+main:before {
+    width: auto;
+    height: 200px;
+    display: block;
+    border: hidden;
+    border-radius: 20px 20px 15px 8px;
+    margin: 1px;
+    content: "";
+    background-image: url("https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/SpaceheyBanner.png");
+    background-position: center center;
+    background-size: cover;
+}
+@media only screen and (max-width: 600px) {
+    main:before{
+        height: 150px;
+    }
+}
+
+.logo{content: url("https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/SpaceheyIcon.png");width: 200px !important;height: 50px !important;}
+.container{width: 75% !important; border: hidden; border-radius: 1.5rem}
