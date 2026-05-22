@@ -1,0 +1,447 @@
+<div class="snowflakes">
+<div class="snowflake"><img src="https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/FuckassCat.webp"/></div>
+<div class="snowflake"><img src="https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/FuckassCat.webp"/></div>
+<div class="snowflake"><img src="https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/FuckassCat.webp"/></div>
+<div class="snowflake"><img src="https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/FuckassCat.webp"/></div>
+<div class="snowflake"><img src="https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/FuckassCat.webp"/></div>
+<div class="snowflake"><img src="https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/FuckassCat.webp"/></div>
+<div class="snowflake"><img src="https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/FuckassCat.webp"/></div>
+<div class="snowflake"><img src="https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/FuckassCat.webp"/></div>
+</div>
+
+<style>
+  @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+  
+          :root{
+  --accent-color: darkmagenta;
+  --secondary-accent-color: darkorchid;
+  --pfp-frame-hue-rotate: 310deg;
+  --pfp-frame-saturation: 1;
+  --profile-bg: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fw.wallhaven.cc%2Ffull%2Fnr%2Fwallhaven-nrd7y7.jpg');
+  --glass-transparency: 0.1;
+  --striped-background: 0.5; /* Striped background opacity on sections */
+  
+  --bg-glass: linear-gradient(-20deg, black 0%, rgba(20,20,50,calc(1 - var(--glass-transparency))) 20%, rgba(55,55,95,calc(1 - var(--glass-transparency) - (1 - var(--glass-transparency)) * 0.33)) 50%, rgba(20,20,50,calc(1 - var(--glass-transparency))) 80%, black 100%);
+  --bg-striped: repeating-linear-gradient( 45deg, rgba(0,0,0,var(--striped-background)), rgba(0,0,0,var(--striped-background)) 10px, rgba(16,16,16,var(--striped-background)) 10px, rgba(16,16,16,var(--striped-background)) 20px);
+}
+
+@keyframes rgb{
+  0%{color: #f00;}
+  20%{color: #ff0;}
+  40%{color: #0f0;}
+  60%{color: #0ff;}
+  80%{color: #f0f;}
+  100%{color: #f00};
+}
+
+@keyframes glow{
+  from{text-shadow: var(--accent-color) 0px 0 0px;}
+  to{text-shadow: var(--secondary-accent-color) 0px 0 10px;}
+}
+
+body {
+  background: var(--profile-bg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav .top {
+  background: linear-gradient(to bottom,#8a3096,#742a7e 50%,#49204e 50%,#5b2a61);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.33),0 0 16px black;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.center:nth-child(2) {
+  height: fit-content !important;
+  text-align: right;
+  width: fit-content;
+  position: absolute;
+  top: 5px;
+  right: 28px;
+}
+
+.right:nth-child(3) {
+  height: fit-content;
+  position: absolute;
+  right: 25px;
+  bottom: 2px;
+}
+
+.logout-btn {
+  min-height: 0 !important;
+}
+
+main {
+  background: rgba(0,0,0,0);
+  width: 100%;
+}
+
+.container {
+  margin: 45px auto 0 auto;
+  min-width: 75vw;
+  max-width: 100vw;
+}
+
+.links:nth-child(2) {
+  position: fixed;
+  left: calc(100vw / 4);
+  right: calc(100vw / 4);
+  top: calc(44.85px / 4);
+  background: rgba(0,0,0,0);
+  z-index: 2;
+}
+
+.links:nth-child(2) li a {
+  padding: 5px;
+  text-shadow: 0 0 7px gray;
+}
+
+@media only screen and (max-width: 1905px) {
+  .links:nth-child(2) {
+    text-align: center;
+    top: calc( (44.85px - 40.633px) / 2 );
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav .top .left .logo{
+    width: 120px;
+  }
+  .links:nth-child(2){
+    left: 10vw;
+  }
+  .links:nth-child(2) a{
+    text-align: center;
+    font-size: 0;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    top: calc((44.85px /2 ) - 13px) !important;
+    position: relative;
+  }
+  .links:nth-child(2) a:before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    left: -4px;
+    background-size: cover !important;
+  }
+  .links:nth-child(2) a[href="https://spacehey.com/notifications"]:before {
+    background:url('https://static.spacehey.net/icons/bell.png');
+  }
+  .links:nth-child(2) a[href="https://spacehey.com/home"]:before{
+    background: url('https://static.spacehey.net/social-icons/custom_spacehey.png');
+  }
+  .links:nth-child(2) a[href="https://spacehey.com/browse"]:before{
+    background: url('https://static.spacehey.net/icons/world.png');
+  }
+  .links:nth-child(2) a[href="https://spacehey.com/search"]:before{
+    background: url('https://static.spacehey.net/icons/user.png');
+  }
+  .links:nth-child(2) a[href="https://im.spacehey.com"]:before{
+    background: url('https://static.spacehey.net/icons/email.png');
+  }
+  .links:nth-child(2) a[href="https://blog.spacehey.com"]:before{
+    background: url('https://static.spacehey.net/icons/script.png');
+  }
+  .links:nth-child(2) a[href="https://spacehey.com/bulletins"]:before{
+    background: url('https://static.spacehey.net/icons/text_list_bullets.png');
+  }
+  .links:nth-child(2) a[href="https://forum.spacehey.com/"]:before{
+    background: url('https://static.spacehey.net/icons/folder.png');
+  }
+  .links:nth-child(2) a[href="https://groups.spacehey.com"]:before{
+    background: url('https://static.spacehey.net/icons/group.png');
+  }
+  .links:nth-child(2) a[href="https://layouts.spacehey.com"]:before{
+    background: url('https://static.spacehey.net/icons/layout.png');
+  }
+  .links:nth-child(2) a[href="https://spacehey.com/favorites"]:before{
+    background: url('https://static.spacehey.net/icons/star.png');
+  }
+  .links:nth-child(2) a[href="https://spacehey.com/invite"]:before{
+    background: url('https://static.spacehey.net/icons/add.png');
+  }
+  .links:nth-child(2) a[href="https://spacehey.com/mobile"]:before{
+    background: url('https://static.spacehey.net/icons/phone.png');
+  }
+  .links:nth-child(2) a[href="https://shop.spacehey.com/"]:before{
+    background: url('https://static.spacehey.net/icons/money.png');
+  }
+  .links:nth-child(2) a[href="https://spacehey.com/about"]:before{
+    background: url('https://static.spacehey.net/icons2/question.png');
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .links:nth-child(2){
+    width: 100vw;
+    left: 0;
+  }
+  .top .center {
+    display: none;
+  }
+  .logo {
+    width: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .right:nth-child(3) {
+    height: fit-content;
+    position: absolute;
+    right: 25px;
+    top: 36.85px !important;
+  }
+  .friends-grid {
+    display: grid;
+    grid-template-columns: 50% 50% !important;
+    grid-template-rows: auto auto auto auto !important;;
+  }
+}
+
+.links:nth-child(2) a:hover {
+  background: linear-gradient(to bottom,#ffffff40,#fff6 50%,#ffffff40 50%,#ffffff1a) !important;
+  outline: solid thin rgba(0,0,0,.5);
+  text-decoration: none !important;
+  box-shadow: inset 0 0 0 1px #ffffff80;
+  border-radius: 2px;
+  color: white !important;
+  animation: none;
+}
+
+a[href="/edit"], a[href="/editphoto"], a[href="/editstatus"], a[href="/settings"], a[href="/editlinks"], p .edit-link a {
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+.profile-info a[href="/edit"] {
+  display: none;
+}
+
+.count {
+  color: var(--secondary-accent-color);
+}
+
+a, a.more, .contact >div a, .profile .friends .person p {
+	color: var(--accent-color);
+}
+
+a:hover, a.more:hover, .contact >div a:hover, .profile .friends .person p:hover {
+	color: var(--secondary-accent-color);
+	animation: glow 0.25s ease-out forwards;
+	text-decoration: none;
+}
+
+.edit-link {
+  color: rgba(255,255,255,0.5);
+}
+
+.edit-link:hover {
+  color: white;
+  text-shadow: white 0px 0 10px;
+}
+
+#q {
+  width: 125px;
+}
+
+.heading {
+  height: 3rem;
+  background: rgb(93,93,93);
+  background: linear-gradient(180deg, rgba(140, 50, 140, 1) 0%, rgba(116, 42, 126, 1) 50%, rgba(75, 20, 80, 1) 50%, rgba(90, 40, 110, 1) 100%) !important;
+  border-radius: 1rem 1rem 0 0;
+  line-height: 1.5rem;
+  text-align: right;
+  font-family: verdana, arial, sans-serif, helvetica;
+  font-weight: light;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 0.7rem;
+  box-sizing: none;
+  color: white !important;
+  letter-spacing: 0.15rem;
+}
+
+.more {
+  color: lime;
+}
+
+.more:hover {
+  color: magenta;
+}
+
+.contact, .blurbs, .url-info, .table-section, .friends, footer, .general-about, .edit-info {
+  background: var(--bg-glass);
+  backdrop-filter: blur(1rem);
+  
+  border: hidden;
+  border-radius: 1rem;
+}
+
+h1, h2, h3, h4 ,p, span  {
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: normal;
+}
+
+.friends {
+  margin-bottom: 1rem;
+}
+
+.inner {
+  padding: 0.5rem !important;
+}
+
+.url-info {
+  border-radius: 0;
+  text-align: center;
+}
+
+.table-section {
+  background: var(--bg-glass);
+}
+  
+.table-section td:nth-child(odd){
+  background: rgba(0,0,0,0);
+  width: 100%;
+  text-align: center;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+  
+.table-section td:nth-child(odd) p{
+  height: 100%;
+  line-height: 3rem;
+}
+ 
+.table-section td:nth-child(even) {
+  background: var(--bg-striped);
+  border-radius: 2rem;
+}
+  
+.table-section tr{
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info {
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.comments-table {
+  border: none;
+}
+
+.comments-table td:nth-child(odd) p{
+  font-size: 1rem;
+  line-height: 2rem;
+  margin: 0;
+}
+
+.comments-table td:nth-child(odd){
+  background: var(--bg-striped);
+    border-radius: 1rem 0 0 1rem;
+}
+
+.comments-table td:nth-child(even){
+  border-radius: 0 1rem 1rem 0;
+  background-color: rgba(0,0,0,0);
+}
+
+.comments-table tr{  
+  border: 1px grey inset !important;
+  border-radius: 1rem;
+}
+
+.general-about {
+  height: 160px;
+}
+
+span[itemprop="name"] h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.section h4{
+  color: var(--accent-color) !important;
+  font-size: 1rem;
+}
+
+table.details-table, .blurbs {
+  color: white;
+}
+
+.comment-replies {
+  background: var(--bg-striped);
+  border-radius: 1rem;
+  border: none;
+}
+
+.comment-reply:not(:first-child) {
+  border-top: 1px solid gray;
+}
+
+.person {
+  text-align: center;
+  width: 100% !important;
+  padding: 0;
+}
+
+.person > a > p {
+  height: 1rem;
+}
+
+.friends-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: auto auto;
+}
+
+@media screen and (max-width: 1500px){
+  .friends-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+  }
+}
+
+@media screen and (max-width: 560px){
+  .friends-grid {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+  }
+}
+.online {
+  color: var(--secondary-accent-color);
+}
+
+
+hi, i like making games on roblox
+
+if you see lesoj tell him i said hi
+@keyframes rgb{
+    0%{color: #f00;}
+    20%{color: #ff0;}
+    40%{color: #0f0;}
+    60%{color: #0ff;}
+    80%{color: #f0f;}
+    100%{color: #f00};
+  }
+my parents and friends <3
+          </style>
