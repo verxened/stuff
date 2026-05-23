@@ -212,6 +212,9 @@ label {
     border-radius: 10px
 }
 
+.table-section:not(:last-child) .details-table tr:nth-child(1) td:first-child p::after {letter-spacing: 0rem; content: "Games"; color:white}
+.table-section:not(:last-child) .details-table tr:nth-child(1) td:first-child p {letter-spacing: -1rem; color:transparent}
+
 button {
     background-color: rgba(205,155,251,0.75);
     padding: 5px;
@@ -240,7 +243,7 @@ main:before {
     background-position: center center;
     background-size: cover;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1250px) {
     main:before{
         height: 150px;
         border-radius: 0px;
@@ -263,4 +266,17 @@ main:before {
         background-position: top left !important;
         background-size: cover !important; 
     }
+    .profile{ 
+        display:flex; 
+        flex-direction: column; 
+        overflow-y: auto; 
+    } 
+    .profile .left{
+        width: 100% !important;
+    } 
+    .profile-pic{
+        width: 100% !important;
+    } 
+    .general-about{text-align: center !important;} 
+    h1{text-align: center !important;}
 }
