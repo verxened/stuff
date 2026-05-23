@@ -44,6 +44,11 @@ nav {
     border: hidden;
     border-radius: 30px 30px 15px 15px;
     background-color: rgba(46,36,78,0.5);
+    background-image: 'https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/Background.png'  !important;
+    background-attachment: FIXED !important;
+    background-repeat: NO-REPEAT !important;
+    background-position: center center !important;
+    background-size: cover !important; 
     backdrop-filter: blur(10px) brightness(0.5);
 }
 
@@ -214,6 +219,10 @@ button {
     border-radius: 5px
 }
 
+footer {
+    background-color: transparent;
+}
+
 .comments-table td:nth-child(even) {
   background: transparent;
     padding: 10px
@@ -224,15 +233,34 @@ main:before {
     height: 200px;
     display: block;
     border: hidden;
-    border-radius: 20px 20px 15px 8px;
+    border-radius: 5px;
     margin: 1px;
     content: "";
     background-image: url("https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/SpaceheyBanner.png");
     background-position: center center;
     background-size: cover;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     main:before{
         height: 150px;
+        border-radius: 0px;
+    }
+    .container{
+        width: 100% !important;
+    }
+    main {
+        color: rgb(235,226,243);
+        background-color: rgba(46,36,78,0.25);
+        backdrop-filter: blur(5px) brightness(0.5);
+        width: auto;
+        border: hidden;
+        border-radius: 0px;
+        padding: 10px;
+        background-image: 'https://raw.githubusercontent.com/verxened/stuff/refs/heads/main/Assets/Web/Spacehey/Background.png'  !important;
+        
+        background-attachment: FIXED !important;
+        background-repeat: NO-REPEAT !important;
+        background-position: top left !important;
+        background-size: cover !important; 
     }
 }
